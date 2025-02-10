@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Doraemon và các nhân vật</title>
+    <style>
+        /* Tổng thể */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            background-color: #272822;
+            color: #F8F8F2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #66D9EF;
+            margin: 0;
+        }
+
+        /* Nội dung chính */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        /* Phần giới thiệu */
+        .intro {
+            background-color: #272822;
+            color: #E6DB74;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro p {
+            font-size: 18px;
+        }
+
+        .intro h2 {
+            color: #66D9EF;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        /* Phần nhân vật */
+        .character-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .character {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .character:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .character img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .character h2 {
+            color: #66D9EF;
+            margin-top: 15px;
+            font-size: 22px;
+        }
+
+        .character p {
+            color: #E6DB74;
+            font-size: 16px;
+        }
+
+        /* Thêm video */
+        .media-container {
+            grid-column: span 2;
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #272822;
+            color: #E6DB74;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Thêm khoảng cách và kiểu dáng cho các phần tử nội dung */
+        .content-box {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            color: #E6DB74;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-box h2 {
+            color: #66D9EF;
+            font-size: 24px;
+        }
+
+        .content-box video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Giới thiệu về Doraemon và các nhân vật</h1>
+</header>
+
+<main>
+    <!-- Phần giới thiệu -->
+    <section class="intro">
+        <h2>Doraemon - Bộ phim hoạt hình nổi tiếng</h2>
+        <p><strong>Doraemon</strong> là một bộ phim hoạt hình nổi tiếng được chuyển thể từ bộ truyện tranh cùng tên của tác giả Fujiko F. Fujio. Câu chuyện xoay quanh chú mèo máy Doraemon, được gửi từ tương lai về quá khứ để giúp cậu bé hậu đậu Nobita. Với chiếc túi thần kỳ chứa đầy những bảo bối đặc biệt, Doraemon và Nobita đã cùng bạn bè trải qua nhiều cuộc phiêu lưu thú vị, đầy ý nghĩa.</p>
+        <p>Bộ phim không chỉ mang lại tiếng cười sảng khoái mà còn chứa đựng những bài học sâu sắc về tình bạn, lòng dũng cảm và sự sáng tạo. Doraemon đã trở thành một phần tuổi thơ của nhiều thế hệ trên khắp thế giới.</p>
+    </section>
+
+    <!-- Phần nhân vật -->
+    <section class="character-container">
+        <div class="character">
+            <img src="https://bedental.vn/wp-content/uploads/2022/12/Anh-Avatar-Doremon-dep-ngau-cute.jpg" alt="Doraemon">
+            <h2>Doraemon</h2>
+            <p>Chú mèo máy đến từ tương lai, luôn giúp Nobita bằng các bảo bối thần kỳ trong túi thần kỳ của mình.</p>
+        </div>
+
+        <div class="character">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/2/2c/Nobita.png" alt="Nobita">
+            <h2>Nobita</h2>
+            <p>Nobita là cậu bé hậu đậu, lười học và thường xuyên gặp rắc rối. Tuy nhiên, cậu có một trái tim ấm áp và lòng tốt bụng, luôn cố gắng giúp đỡ bạn bè khi cần.</p>
+        </div>
+
+        <div class="character">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/3/3e/Shizuka.png" alt="Shizuka">
+            <h2>Shizuka</h2>
+            <p>Shizuka là cô bé thông minh, xinh xắn và luôn tốt bụng. Cô là người bạn thân nhất của Nobita và thường giúp cậu trong học tập.</p>
+        </div>
+
+        <div class="character">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/6/6e/Takeshi_Goda.gif" alt="Chaien">
+            <h2>Chaien</h2>
+            <p>Chaien (Gian) là một người bạn có tính cách mạnh mẽ, nhưng đôi khi hơi hung hăng. Anh ấy thích ca hát, dù giọng hát của anh khiến mọi người phải... bỏ chạy!</p>
+        </div>
+
+        <div class="character">
+            <img src="https://kenh14cdn.com/203336854389633024/2023/3/9/photo-1-1678351067436336021859.jpg" alt="Suneo">
+            <h2>Suneo</h2>
+            <p>Suneo là cậu bé thích khoe khoang và thường xuyên trêu chọc Nobita. Tuy nhiên, cậu cũng là người thông minh và giỏi kỹ thuật, thường giúp đỡ bạn bè khi cần thiết.</p>
+        </div>
+    </section>
+
+    <!-- Phần video -->
+    <section class="media-container">
+        <h2>Video giới thiệu về Doraemon</h2>
+        <video width="500" height="600" controls>
+            <source src="DORAEMON - CHÚ MÈO MÁY ĐẾN TỪ TƯƠNG LAI _ CÂU CHUYỆN KINH DOANH.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </section>
+
+    <!-- Phần các movie -->
+    <div class="content-box">
+        <h2>Nobita và những hiệp sĩ không gian</h2>
+        <video controls>
+            <source src="videoplayback (1).mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </div>
+</main>
+
+<footer>
+    <p>Được tạo bởi <strong>[tác giả Fujiko F. Fujio]</strong></p>
+</footer>
+
+</body>
+</html>
